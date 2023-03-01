@@ -8,4 +8,4 @@ source .venv/bin/activate
 python -m pip install -e .
 
 # Run python script with config
-python scripts/train_age_estimation_net.py $1
+python scripts/train_age_assessment_net.py $1

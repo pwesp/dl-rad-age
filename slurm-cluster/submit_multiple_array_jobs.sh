@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CONFIG_FILES="configs_to_run/*.yaml"
+CONFIG_FILES="configs/*.yaml"
 
 for file in $CONFIG_FILES
 do
@@ -9,6 +9,6 @@ do
   then
 
     echo "sbatch single_array_job_template.sh $config"
-    sbatch dgx/single_array_job_template.sh $file
+    sbatch slurm-cluster/single_array_job_template.sh $file
   fi
 done
