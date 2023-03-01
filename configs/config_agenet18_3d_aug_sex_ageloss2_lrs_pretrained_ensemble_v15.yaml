@@ -1,0 +1,27 @@
+---
+RUN_DESCRIPTION: 'agenet18_3d_aug_sex_ageloss2_lrs_pretrained_ensemble'
+VERSION: 15
+LOGGING_DIR: 'lightning_logs'
+
+ANNOTS_TRAIN: 'metadata/annotations_train.csv'
+ANNOTS_VALID: 'metadata/annotations_valid.csv'
+
+BATCH_SIZE: 32
+AUGMENTATION: True
+AUG_LEVEL: 1
+RESCALE_AGE: True
+FLAT_BINS: True
+SEX_INPUT: True
+BONE_CHANNEL: False
+NUM_TRAIN_WORKERS: 24
+NUM_VALID_WORKERS: 8
+
+NETWORK: 'agenet18_3d'
+DROPOUT: False
+LOSS: 'age_loss_2'
+LEARNING_RATE: 0.001
+WEIGHT_DECAY: 0
+LR_SCHEDULING: True
+PRETRAINED_WEIGHTS: 'lightning_logs/agenet18_3d_autoencoder/version_0/checkpoints/best-epoch=37-val_loss=0.00.ckpt'
+MAX_EPOCHS: 400
+EARLY_STOPPING: 400
