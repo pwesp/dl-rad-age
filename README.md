@@ -1,5 +1,8 @@
 # dl-rad-age
+
 Deep learning enhanced radiological age assessment
+
+## Prerequisits
 
 ## Data preprocessing
 
@@ -14,6 +17,10 @@ Individual networks were trained with `scripts/train_age_assessment_net.py`
 ### Ensemble
 
 The ensemble model consisted of multiple instances of the same network trained using the configurations specified in `configs`.
+
+#### Weights
+
+The weights of the 20 trained networks can be found here:
 
 ## Model evaluation
 
