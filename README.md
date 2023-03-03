@@ -4,6 +4,8 @@ Deep learning enhanced radiological age assessment
 
 ## Prerequisits
 
+The essential python packages to run the code in this repository are listed in `requirements.txt`
+
 ## Data preprocessing
 
 Raw data was preprocessed with `scripts/offline_preprocessing_age_estimation.py`
@@ -20,7 +22,8 @@ The ensemble model consisted of multiple instances of the same network trained u
 
 #### Weights
 
-The weights of the 20 trained networks can be found here:
+The weights of 20 trained `src/dl-rad-age/agenet/agenet18_3d` networks are available for download from [LRZ Sync+Share](https://syncandshare.lrz.de/getlink/fi4m5APaDyS4wEevPSj2ny/ensemble-weights.zip)
+- Password = "LMU"
 
 ## Model evaluation
 
